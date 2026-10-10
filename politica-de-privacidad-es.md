@@ -1,6 +1,6 @@
 # Política de Privacidad y Tratamiento de Datos Personales — Pockit
 
-**Última actualización:** 13 de julio de 2026
+**Última actualización:** 26 de agosto de 2026  
 **Vigencia:** desde la fecha de publicación
 
 Esta política describe cómo la aplicación móvil **Pockit** (la "App") maneja tu información, en cumplimiento de la Ley Estatutaria 1581 de 2012, el Decreto 1377 de 2013 y demás normas concordantes de la República de Colombia, así como de los lineamientos de privacidad del App Store de Apple.
@@ -11,16 +11,16 @@ Esta política describe cómo la aplicación móvil **Pockit** (la "App") maneja
 - **Domicilio:** Bogotá, Colombia
 - **Correo electrónico de contacto:** feedbackpockit@gmail.com
 
-## 2. Principio esencial: tus datos nunca salen de tu dispositivo
+## 2. Principio esencial: tus datos se quedan en tu dispositivo
 
-Pockit funciona **completamente en tu iPhone, sin conexión a servidores**. La App:
+Pockit funciona **en tu iPhone y, por defecto, sin conexión a servidores**. Salvo por la función opcional de importación desde SMS (sección 7), la App:
 
 - **No recolecta, no transmite y no almacena** tus datos personales o financieros en servidores propios ni de terceros.
 - **No requiere crear una cuenta** ni entregar datos de identificación.
 - **No usa analítica, publicidad ni rastreo** de ningún tipo, y no incluye SDKs de terceros.
 - El desarrollador **no tiene acceso** a la información que registras en la App.
 
-En la ficha de privacidad del App Store, Pockit se declara como **"No se recopilan datos" (Data Not Collected)**.
+Si no activas la importación desde SMS, ningún dato sale de tu dispositivo. La ficha de privacidad del App Store refleja únicamente el tratamiento descrito en la sección 7, como información financiera **no vinculada a tu identidad** y usada solo para la funcionalidad de la App.
 
 ## 3. Información que la App guarda localmente en tu dispositivo
 
@@ -42,11 +42,39 @@ Si tienes activadas las copias de seguridad de tu dispositivo (iCloud o computad
 
 La App permite exportar tus movimientos a un archivo CSV. Esta acción **solo ocurre cuando tú la inicias** y tú decides dónde compartir o guardar el archivo. Una vez exportado, la protección de ese archivo queda bajo tu responsabilidad.
 
-## 7. Permisos del sistema
+## 7. Importación automática de movimientos (funciones opcionales)
 
-Pockit solo solicita, de forma opcional, el permiso de **Face ID** para proteger el acceso a la App. No solicita acceso a ubicación, contactos, cámara, micrófono, fotos ni ningún otro dato del dispositivo.
+Pockit puede registrar movimientos por ti de dos maneras, ambas **desactivadas por defecto** y ambas basadas en automatizaciones de Atajos de Apple que tú mismo creas y controlas. Puedes tener una, las dos o ninguna activas.
 
-## 8. Conservación y supresión
+### 7.1 Desde los SMS de tu banco
+
+Pockit puede registrar movimientos automáticamente a partir de los SMS de tu banco, mediante una automatización de Atajos de Apple que tú mismo creas y controlas. Esta función está **desactivada por defecto** y solo opera si la enciendes en Ajustes.
+
+- La App **no lee tus mensajes**: solo recibe el texto de los SMS que tu propia automatización de Atajos le envía (por ejemplo, los de tu banco).
+- Con la función activa, ese texto —junto con los **nombres de tus categorías** (para poder clasificar el gasto en una de ellas)— se envía **cifrado (HTTPS)** a un servidor operado por el desarrollador, que lo procesa con un proveedor de inteligencia artificial (**Anthropic**) únicamente para extraer el monto, el comercio y la categoría del movimiento.
+- El texto del SMS **no se almacena** en el servidor ni por el proveedor de IA (Anthropic no usa los datos de su API para entrenar modelos), y **no se vincula con tu identidad**: la App no envía tu nombre, número, cuentas ni ningún identificador.
+- En tu dispositivo solo se guardan el monto, el comercio y la categoría resultantes, como cualquier otro movimiento que registres a mano.
+- Si corriges la categoría de un movimiento importado, esa corrección se guarda **solo en tu dispositivo** para clasificar igual los próximos SMS de ese comercio; nunca se envía al servidor. Puedes consultarla y borrarla en Ajustes → Automatización → «Correcciones de categoría».
+- Si no hay conexión al momento de recibir el SMS, la App guarda el texto **temporalmente en tu dispositivo, cifrado** (protección de datos completa de iOS), para reintentar procesarlo cuando vuelva la conexión (al abrir la App o al llegar otro SMS). Ese texto **se borra en cuanto se procesa** o se descarta, y nunca se envía sin conexión. Si tras varios días no se logra procesar, se elimina automáticamente.
+- Puedes desactivar la función cuando quieras en Ajustes y eliminar la automatización desde la app Atajos.
+
+### 7.2 Desde tus pagos con Apple Pay
+
+Pockit puede registrar los pagos sin contacto que haces con Apple Pay, mediante la automatización de «Transacción» de Atajos. Esta función está **desactivada por defecto** y solo opera si la enciendes en Ajustes.
+
+- La App **no accede a Wallet** ni a tu historial de transacciones, ni a los datos de tus tarjetas. Solo recibe el monto y el nombre del comercio que tu propia automatización de Atajos le entrega, y únicamente de los pagos sin contacto hechos con tu iPhone o Apple Watch.
+- El **monto nunca sale de tu dispositivo**: lo entrega tu iPhone y se guarda tal cual.
+- Para elegir la categoría del gasto se envía **cifrado (HTTPS)** únicamente el **nombre del comercio**, junto con los **nombres de tus categorías**, al mismo servidor descrito en el punto 7.1. Ese nombre no se almacena ni se vincula con tu identidad.
+- Si ya corregiste antes la categoría de ese comercio, la clasificación ocurre **solo en tu dispositivo** y no se envía nada al servidor.
+- Si no hay conexión, el movimiento **se registra igual** con su monto correcto y queda en la categoría «Varios»: no se guarda ni se encola ningún dato para enviarlo después.
+- Si un mismo cargo llega por las dos vías (el pago con Apple Pay y el SMS del banco), la App lo detecta y conserva **un solo movimiento**.
+- Puedes desactivar la función cuando quieras en Ajustes y eliminar la automatización desde la app Atajos.
+
+## 8. Permisos del sistema
+
+Pockit solo solicita, de forma opcional, el permiso de **Face ID** para proteger el acceso a la App. No solicita acceso a ubicación, contactos, cámara, micrófono, fotos ni ningún otro dato del dispositivo. La App no tiene acceso a tus mensajes ni a Wallet: los SMS y los datos de tus pagos solo llegan a Pockit si tu automatización de Atajos se los envía.
+
+## 9. Conservación y supresión
 
 Tus datos permanecen en tu dispositivo hasta que tú los elimines. Puedes:
 
@@ -56,20 +84,20 @@ Tus datos permanecen en tu dispositivo hasta que tú los elimines. Puedes:
 
 No existen copias en servidores cuya eliminación deba solicitarse al desarrollador.
 
-## 9. Derechos de los titulares (habeas data)
+## 10. Derechos de los titulares (habeas data)
 
 Conforme a los artículos 8, 14 y 15 de la Ley 1581 de 2012, tienes derecho a conocer, actualizar, rectificar y suprimir tu información, y a revocar cualquier autorización. Por el diseño local de la App, **ejerces estos derechos directamente y sin intermediarios**, editando o borrando tu información dentro de Pockit.
 
 Para consultas o reclamos relacionados con esta política puedes escribir a **feedbackpockit@gmail.com**. Las consultas se atenderán en un término máximo de diez (10) días hábiles y los reclamos en un término máximo de quince (15) días hábiles, contados desde su recibo, conforme a la ley. Si consideras vulnerados tus derechos, puedes acudir a la **Superintendencia de Industria y Comercio (SIC)** — [www.sic.gov.co](https://www.sic.gov.co) — una vez agotado el trámite de consulta o reclamo ante el responsable.
 
-## 10. Menores de edad
+## 11. Menores de edad
 
 Pockit no está dirigida a menores de edad y no recolecta datos de ninguna persona, incluidos menores. El tratamiento de datos de niños, niñas y adolescentes se sujeta a lo previsto en el artículo 7 de la Ley 1581 de 2012.
 
-## 11. Cambios a esta política
+## 12. Cambios a esta política
 
 Cualquier cambio se publicará en esta misma página y se reflejará en la fecha de "última actualización". Si un cambio implicara nuevas finalidades de tratamiento, se informará antes de su entrada en vigencia a través de la App o de la ficha del App Store.
 
-## 12. Contacto
+## 13. Contacto
 
 Juan Marulanda — feedbackpockit@gmail.com

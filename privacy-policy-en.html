@@ -10,6 +10,7 @@
          color: #1c1c1e; background: #fff; }
   h1 { font-size: 1.6em; line-height: 1.3; }
   h2 { font-size: 1.15em; margin-top: 2em; }
+  h3 { font-size: 1.02em; margin-top: 1.6em; }
   a { color: #2f6fde; }
   code { background: #f2f2f7; padding: 1px 5px; border-radius: 4px; font-size: .9em; }
   @media (prefers-color-scheme: dark) {
@@ -21,7 +22,7 @@
 </head>
 <body>
 <h1>Privacy Policy — Pockit</h1>
-<p><strong>Last updated:</strong> July 13, 2026
+<p><strong>Last updated:</strong> August 26, 2026
 <strong>Effective:</strong> as of the date of publication</p>
 <p>This policy describes how the <strong>Pockit</strong> mobile application (the "App") handles your information, in compliance with Colombia's Statutory Law 1581 of 2012 and Decree 1377 of 2013, and with Apple's App Store privacy guidelines.</p>
 <h2>1. Data controller</h2>
@@ -30,15 +31,15 @@
 <li><strong>Domicile:</strong> Bogotá, Colombia</li>
 <li><strong>Contact email:</strong> feedbackpockit@gmail.com</li>
 </ul>
-<h2>2. Core principle: your data never leaves your device</h2>
-<p>Pockit runs <strong>entirely on your iPhone, with no connection to servers</strong>. The App:</p>
+<h2>2. Core principle: your data stays on your device</h2>
+<p>Pockit runs <strong>on your iPhone and, by default, with no connection to servers</strong>. Except for the optional SMS import feature (section 7), the App:</p>
 <ul>
 <li><strong>Does not collect, transmit, or store</strong> your personal or financial data on any server, ours or third-party.</li>
 <li><strong>Does not require an account</strong> or any identifying information.</li>
 <li><strong>Uses no analytics, advertising, or tracking</strong> of any kind, and includes no third-party SDKs.</li>
 <li>The developer <strong>has no access</strong> to the information you record in the App.</li>
 </ul>
-<p>On the App Store privacy label, Pockit is declared as <strong>"Data Not Collected."</strong></p>
+<p>If you do not enable SMS import, no data leaves your device. The App Store privacy label reflects only the processing described in section 7, as financial information <strong>not linked to your identity</strong> and used solely for App functionality.</p>
 <h2>3. Information the App stores locally on your device</h2>
 <p>Although no data is collected, the App stores locally, solely to function:</p>
 <ul>
@@ -52,9 +53,33 @@
 <p>If you have device backups enabled (iCloud or computer), Pockit's local database may be included in them. Those backups are managed by Apple according to your settings and Apple's privacy policy. Keys Pockit stores in the Keychain <strong>do not migrate</strong> to backups or other devices.</p>
 <h2>6. Data export (CSV)</h2>
 <p>The App lets you export your transactions to a CSV file. This happens <strong>only when you initiate it</strong>, and you decide where to share or save the file. Once exported, protecting that file is your responsibility.</p>
-<h2>7. System permissions</h2>
-<p>Pockit only requests, optionally, the <strong>Face ID</strong> permission to protect access to the App. It does not request access to location, contacts, camera, microphone, photos, or any other device data.</p>
-<h2>8. Retention and deletion</h2>
+<h2>7. Automatic transaction import (optional features)</h2>
+<p>Pockit can log transactions for you in two ways, both <strong>off by default</strong> and both based on Apple Shortcuts automations that you create and control yourself. You can have either, both, or neither enabled.</p>
+<h3>7.1 From your bank's SMS messages</h3>
+<p>Pockit can log transactions automatically from your bank's SMS messages, through an Apple Shortcuts automation that you create and control yourself. This feature is <strong>off by default</strong> and only works if you enable it in Settings.</p>
+<ul>
+<li>The App <strong>does not read your messages</strong>: it only receives the text of the SMS messages that your own Shortcuts automation sends to it (for example, your bank's).</li>
+<li>With the feature on, that text —along with your <strong>category names</strong> (so the expense can be classified into one of them)— is sent <strong>encrypted (HTTPS)</strong> to a server operated by the developer, which processes it with an artificial-intelligence provider (<strong>Anthropic</strong>) solely to extract the transaction's amount, merchant, and category.</li>
+<li>The SMS text is <strong>not stored</strong> on the server or by the AI provider (Anthropic does not use API data to train models), and it is <strong>not linked to your identity</strong>: the App sends no name, phone number, accounts, or any identifier of yours.</li>
+<li>Only the resulting amount, merchant, and category are saved on your device, like any transaction you enter by hand.</li>
+<li>If you correct the category of an imported transaction, that correction is stored <strong>on your device only</strong>, so texts from that merchant are filed the same way from then on; it is never sent to the server. You can review and delete it in Settings → Automation → "Category corrections".</li>
+<li>If there is no connection when the SMS arrives, the App stores the text <strong>temporarily on your device, encrypted</strong> (iOS complete data protection), to retry processing it when connectivity returns (when you open the App or another SMS arrives). That text is <strong>deleted as soon as it is processed</strong> or discarded, and is never sent while offline. If it cannot be processed after several days, it is deleted automatically.</li>
+<li>You can turn the feature off at any time in Settings and delete the automation from the Shortcuts app.</li>
+</ul>
+<h3>7.2 From your Apple Pay payments</h3>
+<p>Pockit can log the contactless payments you make with Apple Pay, using the Shortcuts "Transaction" automation. This feature is <strong>off by default</strong> and only runs if you turn it on in Settings.</p>
+<ul>
+<li>The App <strong>has no access to Wallet</strong>, to your transaction history, or to your card details. It only receives the amount and merchant name that your own Shortcuts automation hands to it, and only for contactless payments made with your iPhone or Apple Watch.</li>
+<li>The <strong>amount never leaves your device</strong>: it comes from your iPhone and is stored as is.</li>
+<li>To pick a category, only the <strong>merchant name</strong> is sent <strong>encrypted (HTTPS)</strong>, together with the <strong>names of your categories</strong>, to the same server described in section 7.1. That name is neither stored nor linked to your identity.</li>
+<li>If you have previously corrected the category for that merchant, classification happens <strong>on your device only</strong> and nothing is sent to the server.</li>
+<li>If you are offline, the transaction is <strong>still logged</strong> with its correct amount and lands in the "Other" category: no data is stored or queued to be sent later.</li>
+<li>If the same charge arrives through both paths (the Apple Pay payment and your bank's SMS), the App detects it and keeps <strong>a single transaction</strong>.</li>
+<li>You can turn the feature off at any time in Settings and delete the automation from the Shortcuts app.</li>
+</ul>
+<h2>8. System permissions</h2>
+<p>Pockit only requests, optionally, the <strong>Face ID</strong> permission to protect access to the App. It does not request access to location, contacts, camera, microphone, photos, or any other device data. The App has no access to your messages or to Wallet: SMS messages and payment data only reach Pockit if your Shortcuts automation sends them to it.</p>
+<h2>9. Retention and deletion</h2>
 <p>Your data remains on your device until you delete it. You can:</p>
 <ul>
 <li>Delete individual transactions, goals, or categories within the App.</li>
@@ -62,14 +87,14 @@
 <li>Uninstall the App, which removes its local database.</li>
 </ul>
 <p>There are no server-side copies whose deletion needs to be requested from the developer.</p>
-<h2>9. Your rights (habeas data)</h2>
+<h2>10. Your rights (habeas data)</h2>
 <p>Under articles 8, 14, and 15 of Law 1581 of 2012, you have the right to know, update, rectify, and delete your information, and to revoke any authorization. Because of the App's local-only design, <strong>you exercise these rights directly and without intermediaries</strong>, by editing or deleting your information inside Pockit.</p>
 <p>For questions or claims regarding this policy, write to <strong>feedbackpockit@gmail.com</strong>. Inquiries will be answered within a maximum of ten (10) business days and claims within a maximum of fifteen (15) business days from receipt, as required by law. If you believe your rights have been violated, you may contact Colombia's <strong>Superintendence of Industry and Commerce (SIC)</strong> — <a href="https://www.sic.gov.co">www.sic.gov.co</a> — after first raising the inquiry or claim with the controller.</p>
-<h2>10. Minors</h2>
+<h2>11. Minors</h2>
 <p>Pockit is not directed at minors and does not collect data from anyone, including minors. Processing of children's and adolescents' data is subject to article 7 of Law 1581 of 2012.</p>
-<h2>11. Changes to this policy</h2>
+<h2>12. Changes to this policy</h2>
 <p>Any change will be published on this page and reflected in the "last updated" date. If a change involved new processing purposes, it would be announced before taking effect through the App or the App Store listing.</p>
-<h2>12. Contact</h2>
+<h2>13. Contact</h2>
 <p>Juan Marulanda — feedbackpockit@gmail.com</p>
 </body>
 </html>

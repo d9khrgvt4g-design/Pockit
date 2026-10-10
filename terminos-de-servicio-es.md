@@ -1,12 +1,12 @@
 # Términos de Servicio — Pockit
 
-**Última actualización:** 13 de julio de 2026
+**Última actualización:** 26 de agosto de 2026  
 
 Estos Términos de Servicio (los "Términos") constituyen un acuerdo de licencia de usuario final (EULA) entre tú (el "Usuario") y **Juan Marulanda**, persona natural domiciliada en Bogotá, Colombia (el "Desarrollador"), respecto del uso de la aplicación móvil **Pockit** (la "App"), distribuida a través del App Store de Apple. Al descargar o usar la App aceptas estos Términos. Si no estás de acuerdo, no uses la App.
 
 ## 1. Descripción de la App
 
-Pockit es una herramienta de **finanzas personales de uso individual** que te permite registrar gastos, ingresos y ahorros; organizar categorías y presupuestos; crear metas de ahorro; programar movimientos recurrentes; consultar tendencias e historial de gasto; y exportar tus movimientos a CSV. Toda la información funciona **localmente en tu dispositivo**: la App no requiere cuenta, no se conecta a servidores y el Desarrollador no accede a tus datos (ver la [Política de Privacidad](./politica-de-privacidad-es.md)).
+Pockit es una herramienta de **finanzas personales de uso individual** que te permite registrar gastos, ingresos y ahorros; organizar categorías y presupuestos; crear metas de ahorro; programar movimientos recurrentes; consultar tendencias e historial de gasto; y exportar tus movimientos a CSV. Toda la información funciona **localmente en tu dispositivo**: la App no requiere cuenta y el Desarrollador no accede a tus datos. Las únicas funciones que se comunican con un servidor son las de **importación automática de movimientos** (desde los SMS de tu banco y desde tus pagos con Apple Pay), que son opcionales y están desactivadas por defecto (ver la [Política de Privacidad](https://d9khrgvt4g-design.github.io/Pockit/politica-de-privacidad-es.html)).
 
 ## 2. Precio
 

@@ -1,6 +1,6 @@
 # Términos de Servicio — Pockit
 
-**Última actualización:** 26 de agosto de 2026  
+**Última actualización:** 30 de octubre de 2026  
 
 Estos Términos de Servicio (los "Términos") constituyen un acuerdo de licencia de usuario final (EULA) entre tú (el "Usuario") y **Juan Marulanda**, persona natural domiciliada en Bogotá, Colombia (el "Desarrollador"), respecto del uso de la aplicación móvil **Pockit** (la "App"), distribuida a través del App Store de Apple. Al descargar o usar la App aceptas estos Términos. Si no estás de acuerdo, no uses la App.
 
@@ -8,9 +8,17 @@ Estos Términos de Servicio (los "Términos") constituyen un acuerdo de licencia
 
 Pockit es una herramienta de **finanzas personales de uso individual** que te permite registrar gastos, ingresos y ahorros; organizar categorías y presupuestos; crear metas de ahorro; programar movimientos recurrentes; consultar tendencias e historial de gasto; y exportar tus movimientos a CSV. Toda la información funciona **localmente en tu dispositivo**: la App no requiere cuenta y el Desarrollador no accede a tus datos. Las únicas funciones que se comunican con un servidor son las de **importación automática de movimientos** (desde los SMS de tu banco y desde tus pagos con Apple Pay), que son opcionales y están desactivadas por defecto (ver la [Política de Privacidad](https://d9khrgvt4g-design.github.io/Pockit/politica-de-privacidad-es.html)).
 
-## 2. Precio
+## 2. Planes y suscripción (Pockit Pro)
 
-En su versión actual la App es **gratuita** y no contiene compras dentro de la aplicación. Si en el futuro se introdujeran funciones de pago, se informará antes de su activación y se procesarían exclusivamente a través del App Store, bajo los términos de Apple y con actualización de estos Términos.
+La App se puede usar **gratis** y sin límite de tiempo: el registro manual, el historial, los presupuestos, los reportes y la captura de pagos con Apple Pay no tienen costo. Las funciones que usan inteligencia artificial —leer los SMS de tu banco y categorizar los movimientos automáticamente— tienen un **número limitado de usos al mes** en el plan gratuito.
+
+**Pockit Pro** es una suscripción de renovación automática que quita ese límite. Se ofrece en plan anual y mensual, con los precios que muestra la App en tu moneda antes de comprar. Condiciones:
+
+- **Pago y renovación.** El pago se carga a tu cuenta de Apple al confirmar la compra. La suscripción se **renueva automáticamente** por el mismo periodo y precio, salvo que la canceles al menos **24 horas antes** del final del periodo en curso; la renovación se cobra dentro de esas 24 horas.
+- **Prueba gratis.** Si el plan incluye una prueba gratuita, no se cobra nada durante la prueba; al terminar, la suscripción empieza a cobrarse automáticamente salvo que la canceles antes. La prueba se ofrece una sola vez por cuenta de Apple. Te avisamos dos días antes de que termine.
+- **Cancelación.** Puedes administrar o cancelar la suscripción en cualquier momento desde Ajustes → tu nombre → Suscripciones en tu iPhone (o desde Ajustes de Pockit). Al cancelar conservas Pro hasta el final del periodo ya pagado.
+- **Reembolsos.** Los pagos los procesa Apple; las solicitudes de reembolso se hacen ante Apple, según sus políticas.
+- **Cambios de precio.** Si el precio cambia, Apple te avisa con anticipación según sus reglas y, cuando corresponde, pide tu consentimiento antes de cobrar el nuevo precio.
 
 ## 3. Licencia de uso
 

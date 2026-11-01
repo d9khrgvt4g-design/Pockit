@@ -1,6 +1,6 @@
 # Terms of Service — Pockit
 
-**Last updated:** August 26, 2026  
+**Last updated:** October 30, 2026  
 
 These Terms of Service (the "Terms") are an end-user license agreement (EULA) between you (the "User") and **Juan Marulanda**, a natural person domiciled in Bogotá, Colombia (the "Developer"), regarding the use of the **Pockit** mobile application (the "App"), distributed through Apple's App Store. By downloading or using the App you accept these Terms. If you do not agree, do not use the App.
 
@@ -8,9 +8,17 @@ These Terms of Service (the "Terms") are an end-user license agreement (EULA) be
 
 Pockit is a **personal finance tool for individual use** that lets you record expenses, income, and savings; organize categories and budgets; create savings goals; schedule recurring transactions; view trends and spending history; and export your transactions to CSV. Everything works **locally on your device**: the App requires no account and the Developer has no access to your data. The only features that communicate with a server are the **automatic transaction imports** (from your bank's SMS messages and from your Apple Pay payments), which are optional and off by default (see the [Privacy Policy](https://d9khrgvt4g-design.github.io/Pockit/privacy-policy-en.html)).
 
-## 2. Price
+## 2. Plans and subscription (Pockit Pro)
 
-In its current version the App is **free** and contains no in-app purchases. If paid features were introduced in the future, they would be announced beforehand, processed exclusively through the App Store under Apple's terms, and these Terms would be updated.
+The App can be used **for free** with no time limit: manual entry, history, budgets, reports and Apple Pay capture have no cost. The features that use artificial intelligence—reading your bank's SMS and categorizing transactions automatically—have a **limited number of uses per month** on the free plan.
+
+**Pockit Pro** is an auto-renewing subscription that removes that limit. It is offered as an annual and a monthly plan, at the prices the App shows in your currency before you buy. Terms:
+
+- **Payment and renewal.** Payment is charged to your Apple Account when you confirm the purchase. The subscription **renews automatically** for the same period and price unless you cancel it at least **24 hours before** the end of the current period; renewal is charged within those 24 hours.
+- **Free trial.** If the plan includes a free trial, nothing is charged during the trial; when it ends, the subscription starts being charged automatically unless you cancel before. The trial is offered once per Apple Account. We'll remind you two days before it ends.
+- **Cancellation.** You can manage or cancel the subscription at any time from Settings → your name → Subscriptions on your iPhone (or from Pockit's Settings). If you cancel, you keep Pro until the end of the period already paid.
+- **Refunds.** Payments are processed by Apple; refund requests are made to Apple under its policies.
+- **Price changes.** If the price changes, Apple notifies you in advance under its rules and, when applicable, asks for your consent before charging the new price.
 
 ## 3. License
 

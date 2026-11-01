@@ -22,7 +22,7 @@
 </head>
 <body>
 <h1>Política de Privacidad y Tratamiento de Datos Personales — Pockit</h1>
-<p><strong>Última actualización:</strong> 26 de agosto de 2026
+<p><strong>Última actualización:</strong> 1 de noviembre de 2026
 <strong>Vigencia:</strong> desde la fecha de publicación</p>
 <p>Esta política describe cómo la aplicación móvil <strong>Pockit</strong> (la "App") maneja tu información, en cumplimiento de la Ley Estatutaria 1581 de 2012, el Decreto 1377 de 2013 y demás normas concordantes de la República de Colombia, así como de los lineamientos de privacidad del App Store de Apple.</p>
 <h2>1. Responsable</h2>
@@ -32,14 +32,14 @@
 <li><strong>Correo electrónico de contacto:</strong> feedbackpockit@gmail.com</li>
 </ul>
 <h2>2. Principio esencial: tus datos se quedan en tu dispositivo</h2>
-<p>Pockit funciona <strong>en tu iPhone y, por defecto, sin conexión a servidores</strong>. Salvo por la función opcional de importación desde SMS (sección 7), la App:</p>
+<p>Pockit funciona <strong>en tu iPhone y, por defecto, sin conexión a servidores</strong>. Salvo por las funciones opcionales de importación automática (sección 7), la App:</p>
 <ul>
 <li><strong>No recolecta, no transmite y no almacena</strong> tus datos personales o financieros en servidores propios ni de terceros.</li>
 <li><strong>No requiere crear una cuenta</strong> ni entregar datos de identificación.</li>
-<li><strong>No usa analítica, publicidad ni rastreo</strong> de ningún tipo, y no incluye SDKs de terceros.</li>
+<li><strong>No usa publicidad ni rastreo</strong> de ningún tipo y no incluye SDKs de terceros. Las estadísticas de uso de la sección 7.4 son propias, <strong>no incluyen datos financieros</strong> y puedes apagarlas.</li>
 <li>El desarrollador <strong>no tiene acceso</strong> a la información que registras en la App.</li>
 </ul>
-<p>Si no activas la importación desde SMS, ningún dato sale de tu dispositivo. La ficha de privacidad del App Store refleja únicamente el tratamiento descrito en la sección 7, como información financiera <strong>no vinculada a tu identidad</strong> y usada solo para la funcionalidad de la App.</p>
+<p>Si no activas la importación automática (SMS o Apple Pay) y apagas las estadísticas de uso (sección 7.4), ningún dato sale de tu dispositivo. La ficha de privacidad del App Store refleja únicamente el tratamiento descrito en la sección 7: información financiera, identificadores aleatorios, el historial de compras de la suscripción y datos de uso, todos <strong>no vinculados a tu identidad</strong> y usados solo para la funcionalidad de la App, para prevenir abusos y para mejorarla.</p>
 <h2>3. Información que la App guarda localmente en tu dispositivo</h2>
 <p>Aunque no se recolecta información, la App almacena localmente, solo para su funcionamiento:</p>
 <ul>
@@ -60,7 +60,7 @@
 <ul>
 <li>La App <strong>no lee tus mensajes</strong>: solo recibe el texto de los SMS que tu propia automatización de Atajos le envía (por ejemplo, los de tu banco).</li>
 <li>Con la función activa, ese texto —junto con los <strong>nombres de tus categorías</strong> (para poder clasificar el gasto en una de ellas)— se envía <strong>cifrado (HTTPS)</strong> a un servidor operado por el desarrollador, que lo procesa con un proveedor de inteligencia artificial (<strong>Anthropic</strong>) únicamente para extraer el monto, el comercio y la categoría del movimiento.</li>
-<li>El texto del SMS <strong>no se almacena</strong> en el servidor ni por el proveedor de IA (Anthropic no usa los datos de su API para entrenar modelos), y <strong>no se vincula con tu identidad</strong>: la App no envía tu nombre, número, cuentas ni ningún identificador.</li>
+<li>El texto del SMS <strong>no se almacena</strong> en el servidor ni por el proveedor de IA (Anthropic no usa los datos de su API para entrenar modelos), y <strong>no se vincula con tu identidad</strong>: la App no envía tu nombre, número ni cuentas; solo el identificador aleatorio descrito en el punto 7.3.</li>
 <li>En tu dispositivo solo se guardan el monto, el comercio y la categoría resultantes, como cualquier otro movimiento que registres a mano.</li>
 <li>Si corriges la categoría de un movimiento importado, esa corrección se guarda <strong>solo en tu dispositivo</strong> para clasificar igual los próximos SMS de ese comercio; nunca se envía al servidor. Puedes consultarla y borrarla en Ajustes → Automatización → «Correcciones de categoría».</li>
 <li>Si no hay conexión al momento de recibir el SMS, la App guarda el texto <strong>temporalmente en tu dispositivo, cifrado</strong> (protección de datos completa de iOS), para reintentar procesarlo cuando vuelva la conexión (al abrir la App o al llegar otro SMS). Ese texto <strong>se borra en cuanto se procesa</strong> o se descarta, y nunca se envía sin conexión. Si tras varios días no se logra procesar, se elimina automáticamente.</li>
@@ -73,12 +73,29 @@
 <li>El <strong>monto nunca sale de tu dispositivo</strong>: lo entrega tu iPhone y se guarda tal cual.</li>
 <li>Para elegir la categoría del gasto se envía <strong>cifrado (HTTPS)</strong> únicamente el <strong>nombre del comercio</strong>, junto con los <strong>nombres de tus categorías</strong>, al mismo servidor descrito en el punto 7.1. Ese nombre no se almacena ni se vincula con tu identidad.</li>
 <li>Si ya corregiste antes la categoría de ese comercio, la clasificación ocurre <strong>solo en tu dispositivo</strong> y no se envía nada al servidor.</li>
-<li>Si no hay conexión, el movimiento <strong>se registra igual</strong> con su monto correcto y queda en la categoría «Varios»: no se guarda ni se encola ningún dato para enviarlo después.</li>
+<li>Si no hay conexión (o el teléfono está bloqueado y la App todavía no puede abrir tus datos), el movimiento <strong>se registra igual</strong> con su monto correcto y queda por ahora en la categoría «Varios». La próxima vez que abras la App con conexión se envía el nombre del comercio para elegir la categoría, como se describe arriba. Si eso no ocurre en 14 días, el movimiento se queda en «Varios».</li>
 <li>Si un mismo cargo llega por las dos vías (el pago con Apple Pay y el SMS del banco), la App lo detecta y conserva <strong>un solo movimiento</strong>.</li>
 <li>Puedes desactivar la función cuando quieras en Ajustes y eliminar la automatización desde la app Atajos.</li>
 </ul>
+<h3>7.3 Plan gratuito, Pockit Pro y verificación de la App</h3>
+<p>Las funciones de los puntos 7.1 y 7.2 usan inteligencia artificial, que tiene un costo por uso. El plan gratuito incluye un número limitado de <strong>registros automáticos al mes</strong> (cada SMS leído y cada pago de Apple Pay categorizado cuenta uno); <strong>Pockit Pro</strong> no tiene ese límite. Registrar un pago de Apple Pay no cuenta: solo elegir su categoría. Para llevar esa cuenta y evitar abusos:</p>
+<ul>
+<li>Al instalarse, la App genera un <strong>identificador aleatorio</strong> que no está relacionado con tu nombre, tu número, tu Apple ID ni tus cuentas, y lo envía con cada solicitud de los puntos 7.1 y 7.2. El servidor guarda <strong>solo</strong> ese identificador, el mes y la cantidad de usos; ese conteo <strong>se borra solo a los 70 días</strong>. Para que reinstalar no reinicie la cuenta, el identificador se conserva en el llavero (Keychain) de tu iPhone aunque borres la App.</li>
+<li>Para comprobar que las solicitudes vienen de la App original y no de otro programa, la App usa <strong>App Attest</strong> de Apple: tu iPhone genera una clave y el servidor guarda únicamente su <strong>clave pública</strong>, sin datos tuyos.</li>
+<li>Si tienes Pockit Pro, la App envía la <strong>constancia de compra firmada por Apple</strong> (producto, fechas y el número de transacción de Apple) para verificar la suscripción. El servidor guarda ese número de transacción junto con los identificadores de las instalaciones que la usan (máximo 10), para evitar que una suscripción se comparta. <strong>No recibe</strong> tu nombre, correo ni medio de pago: eso lo maneja Apple.</li>
+<li>Si estás en el plan gratuito y ya usaste los registros automáticos del mes, el texto de los SMS que lleguen se guarda <strong>en tu dispositivo, cifrado, sin enviarse</strong>, hasta por <strong>60 días</strong>: si te suscribes a Pockit Pro se procesa entonces (con la fecha en que llegó); si no, se elimina.</li>
+<li>Ninguno de estos datos se usa para publicidad ni se comparte con terceros.</li>
+</ul>
+<h3>7.4 Estadísticas de uso</h3>
+<p>Para saber qué partes de Pockit funcionan y cuáles confunden, la App envía al mismo servidor del desarrollador <strong>eventos de uso</strong>: por ejemplo, que se abrió la pantalla de planes, que se eligió un plan, que se inició o completó una compra (plan y precio de la tienda), que un atajo quedó configurado o que un movimiento se registró solo (y si vino de un SMS o de Apple Pay).</p>
+<ul>
+<li>Los eventos son de una <strong>lista cerrada</strong> y <strong>nunca incluyen</strong> los montos de tus movimientos, comercios, categorías, notas ni el texto de tus mensajes. El servidor descarta cualquier dato que no esté en esa lista.</li>
+<li>Van con un <strong>identificador aleatorio propio</strong>, distinto del del punto 7.3 y no relacionado con tu nombre, tu número, tu Apple ID ni tus cuentas. Cambia cuando usas «Eliminar cuenta».</li>
+<li>Se usan solo para mejorar la App: no se usan para publicidad ni se comparten con terceros. El servidor los conserva <strong>hasta 13 meses</strong> y luego los borra.</li>
+<li>Puedes apagarlas en <strong>Ajustes → Datos → «Compartir estadísticas de uso»</strong>; al hacerlo se borran los eventos que aún no se habían enviado.</li>
+</ul>
 <h2>8. Permisos del sistema</h2>
-<p>Pockit solo solicita, de forma opcional, el permiso de <strong>Face ID</strong> para proteger el acceso a la App. No solicita acceso a ubicación, contactos, cámara, micrófono, fotos ni ningún otro dato del dispositivo. La App no tiene acceso a tus mensajes ni a Wallet: los SMS y los datos de tus pagos solo llegan a Pockit si tu automatización de Atajos se los envía.</p>
+<p>Pockit solo solicita, de forma opcional, el permiso de <strong>Face ID</strong> para proteger el acceso a la App y el de <strong>notificaciones</strong> para avisarte cuando registra un movimiento, cuando está por terminar tu prueba de Pockit Pro o si falta configurar el atajo de SMS. No solicita acceso a ubicación, contactos, cámara, micrófono, fotos ni ningún otro dato del dispositivo. La App no tiene acceso a tus mensajes ni a Wallet: los SMS y los datos de tus pagos solo llegan a Pockit si tu automatización de Atajos se los envía.</p>
 <h2>9. Conservación y supresión</h2>
 <p>Tus datos permanecen en tu dispositivo hasta que tú los elimines. Puedes:</p>
 <ul>
@@ -86,7 +103,7 @@
 <li>Usar la opción <strong>"Eliminar cuenta"</strong> en Ajustes, que borra permanentemente todos los movimientos, presupuestos y metas guardados en el dispositivo.</li>
 <li>Desinstalar la App, lo que elimina su base de datos local.</li>
 </ul>
-<p>No existen copias en servidores cuya eliminación deba solicitarse al desarrollador.</p>
+<p>El servidor no guarda tus movimientos. Solo conserva los datos técnicos del punto 7.3: el identificador aleatorio con su conteo mensual (que se borra solo a los 70 días), la clave pública de App Attest y, si eres Pro, el número de transacción de Apple; y, si no las apagaste, las estadísticas de uso del punto 7.4 (hasta 13 meses). Puedes pedir su eliminación al correo de contacto.</p>
 <h2>10. Derechos de los titulares (habeas data)</h2>
 <p>Conforme a los artículos 8, 14 y 15 de la Ley 1581 de 2012, tienes derecho a conocer, actualizar, rectificar y suprimir tu información, y a revocar cualquier autorización. Por el diseño local de la App, <strong>ejerces estos derechos directamente y sin intermediarios</strong>, editando o borrando tu información dentro de Pockit.</p>
 <p>Para consultas o reclamos relacionados con esta política puedes escribir a <strong>feedbackpockit@gmail.com</strong>. Las consultas se atenderán en un término máximo de diez (10) días hábiles y los reclamos en un término máximo de quince (15) días hábiles, contados desde su recibo, conforme a la ley. Si consideras vulnerados tus derechos, puedes acudir a la <strong>Superintendencia de Industria y Comercio (SIC)</strong> — <a href="https://www.sic.gov.co">www.sic.gov.co</a> — una vez agotado el trámite de consulta o reclamo ante el responsable.</p>

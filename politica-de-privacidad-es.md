@@ -1,6 +1,6 @@
 # Política de Privacidad y Tratamiento de Datos Personales — Pockit
 
-**Última actualización:** 28 de octubre de 2026  
+**Última actualización:** 1 de noviembre de 2026  
 **Vigencia:** desde la fecha de publicación
 
 Esta política describe cómo la aplicación móvil **Pockit** (la "App") maneja tu información, en cumplimiento de la Ley Estatutaria 1581 de 2012, el Decreto 1377 de 2013 y demás normas concordantes de la República de Colombia, así como de los lineamientos de privacidad del App Store de Apple.
@@ -17,10 +17,10 @@ Pockit funciona **en tu iPhone y, por defecto, sin conexión a servidores**. Sal
 
 - **No recolecta, no transmite y no almacena** tus datos personales o financieros en servidores propios ni de terceros.
 - **No requiere crear una cuenta** ni entregar datos de identificación.
-- **No usa analítica, publicidad ni rastreo** de ningún tipo, y no incluye SDKs de terceros.
+- **No usa publicidad ni rastreo** de ningún tipo y no incluye SDKs de terceros. Las estadísticas de uso de la sección 7.4 son propias, **no incluyen datos financieros** y puedes apagarlas.
 - El desarrollador **no tiene acceso** a la información que registras en la App.
 
-Si no activas la importación automática (SMS o Apple Pay), ningún dato sale de tu dispositivo. La ficha de privacidad del App Store refleja únicamente el tratamiento descrito en la sección 7: información financiera, un identificador de instalación y el historial de compras de la suscripción, todos **no vinculados a tu identidad** y usados solo para la funcionalidad de la App y para prevenir abusos.
+Si no activas la importación automática (SMS o Apple Pay) y apagas las estadísticas de uso (sección 7.4), ningún dato sale de tu dispositivo. La ficha de privacidad del App Store refleja únicamente el tratamiento descrito en la sección 7: información financiera, identificadores aleatorios, el historial de compras de la suscripción y datos de uso, todos **no vinculados a tu identidad** y usados solo para la funcionalidad de la App, para prevenir abusos y para mejorarla.
 
 ## 3. Información que la App guarda localmente en tu dispositivo
 
@@ -80,9 +80,18 @@ Las funciones de los puntos 7.1 y 7.2 usan inteligencia artificial, que tiene un
 - Si estás en el plan gratuito y ya usaste los registros automáticos del mes, el texto de los SMS que lleguen se guarda **en tu dispositivo, cifrado, sin enviarse**, hasta por **60 días**: si te suscribes a Pockit Pro se procesa entonces (con la fecha en que llegó); si no, se elimina.
 - Ninguno de estos datos se usa para publicidad ni se comparte con terceros.
 
+### 7.4 Estadísticas de uso
+
+Para saber qué partes de Pockit funcionan y cuáles confunden, la App envía al mismo servidor del desarrollador **eventos de uso**: por ejemplo, que se abrió la pantalla de planes, que se eligió un plan, que se inició o completó una compra (plan y precio de la tienda), que un atajo quedó configurado o que un movimiento se registró solo (y si vino de un SMS o de Apple Pay).
+
+- Los eventos son de una **lista cerrada** y **nunca incluyen** los montos de tus movimientos, comercios, categorías, notas ni el texto de tus mensajes. El servidor descarta cualquier dato que no esté en esa lista.
+- Van con un **identificador aleatorio propio**, distinto del del punto 7.3 y no relacionado con tu nombre, tu número, tu Apple ID ni tus cuentas. Cambia cuando usas «Eliminar cuenta».
+- Se usan solo para mejorar la App: no se usan para publicidad ni se comparten con terceros. El servidor los conserva **hasta 13 meses** y luego los borra.
+- Puedes apagarlas en **Ajustes → Datos → «Compartir estadísticas de uso»**; al hacerlo se borran los eventos que aún no se habían enviado.
+
 ## 8. Permisos del sistema
 
-Pockit solo solicita, de forma opcional, el permiso de **Face ID** para proteger el acceso a la App. No solicita acceso a ubicación, contactos, cámara, micrófono, fotos ni ningún otro dato del dispositivo. La App no tiene acceso a tus mensajes ni a Wallet: los SMS y los datos de tus pagos solo llegan a Pockit si tu automatización de Atajos se los envía.
+Pockit solo solicita, de forma opcional, el permiso de **Face ID** para proteger el acceso a la App y el de **notificaciones** para avisarte cuando registra un movimiento, cuando está por terminar tu prueba de Pockit Pro o si falta configurar el atajo de SMS. No solicita acceso a ubicación, contactos, cámara, micrófono, fotos ni ningún otro dato del dispositivo. La App no tiene acceso a tus mensajes ni a Wallet: los SMS y los datos de tus pagos solo llegan a Pockit si tu automatización de Atajos se los envía.
 
 ## 9. Conservación y supresión
 
@@ -92,7 +101,7 @@ Tus datos permanecen en tu dispositivo hasta que tú los elimines. Puedes:
 - Usar la opción **"Eliminar cuenta"** en Ajustes, que borra permanentemente todos los movimientos, presupuestos y metas guardados en el dispositivo.
 - Desinstalar la App, lo que elimina su base de datos local.
 
-El servidor no guarda tus movimientos. Solo conserva los datos técnicos del punto 7.3: el identificador aleatorio con su conteo mensual (que se borra solo a los 70 días), la clave pública de App Attest y, si eres Pro, el número de transacción de Apple. Puedes pedir su eliminación al correo de contacto.
+El servidor no guarda tus movimientos. Solo conserva los datos técnicos del punto 7.3: el identificador aleatorio con su conteo mensual (que se borra solo a los 70 días), la clave pública de App Attest y, si eres Pro, el número de transacción de Apple; y, si no las apagaste, las estadísticas de uso del punto 7.4 (hasta 13 meses). Puedes pedir su eliminación al correo de contacto.
 
 ## 10. Derechos de los titulares (habeas data)
 

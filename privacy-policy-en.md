@@ -1,6 +1,6 @@
 # Privacy Policy — Pockit
 
-**Last updated:** October 28, 2026  
+**Last updated:** November 1, 2026  
 **Effective:** as of the date of publication
 
 This policy describes how the **Pockit** mobile application (the "App") handles your information, in compliance with Colombia's Statutory Law 1581 of 2012 and Decree 1377 of 2013, and with Apple's App Store privacy guidelines.
@@ -17,10 +17,10 @@ Pockit runs **on your iPhone and, by default, with no connection to servers**. E
 
 - **Does not collect, transmit, or store** your personal or financial data on any server, ours or third-party.
 - **Does not require an account** or any identifying information.
-- **Uses no analytics, advertising, or tracking** of any kind, and includes no third-party SDKs.
+- **Uses no advertising or tracking** of any kind and includes no third-party SDKs. The usage statistics in section 7.4 are our own, **include no financial data**, and can be turned off.
 - The developer **has no access** to the information you record in the App.
 
-If you do not enable automatic import (SMS or Apple Pay), no data leaves your device. The App Store privacy label reflects only the processing described in section 7: financial information, an installation identifier, and the subscription's purchase history, all **not linked to your identity** and used solely for App functionality and abuse prevention.
+If you do not enable automatic import (SMS or Apple Pay) and turn off usage statistics (section 7.4), no data leaves your device. The App Store privacy label reflects only the processing described in section 7: financial information, random identifiers, the subscription's purchase history, and usage data, all **not linked to your identity** and used solely for App functionality, abuse prevention, and improving the App.
 
 ## 3. Information the App stores locally on your device
 
@@ -80,9 +80,18 @@ The features in sections 7.1 and 7.2 use artificial intelligence, which has a co
 - If you are on the free plan and have already used the month's automatic entries, the text of incoming SMS is stored **on your device, encrypted, without being sent**, for up to **60 days**: if you subscribe to Pockit Pro it is processed then (with the date it arrived); otherwise it is deleted.
 - None of this data is used for advertising or shared with third parties.
 
+### 7.4 Usage statistics
+
+To learn which parts of Pockit work and which ones confuse people, the App sends **usage events** to the same developer server: for example, that the plans screen was opened, that a plan was chosen, that a purchase was started or completed (plan and store price), that a shortcut was set up, or that a transaction was logged automatically (and whether it came from an SMS or Apple Pay).
+
+- Events come from a **closed list** and **never include** your transaction amounts, merchants, categories, notes, or the text of your messages. The server discards any data that is not on that list.
+- They carry their **own random identifier**, different from the one in section 7.3 and unrelated to your name, number, Apple ID, or accounts. It changes when you use "Delete account".
+- They are used only to improve the App: never for advertising, and they are not shared with third parties. The server keeps them for **up to 13 months** and then deletes them.
+- You can turn them off in **Settings → Data → "Share usage statistics"**; doing so deletes any events that had not been sent yet.
+
 ## 8. System permissions
 
-Pockit only requests, optionally, the **Face ID** permission to protect access to the App. It does not request access to location, contacts, camera, microphone, photos, or any other device data. The App has no access to your messages or to Wallet: SMS messages and payment data only reach Pockit if your Shortcuts automation sends them to it.
+Pockit only requests, optionally, the **Face ID** permission to protect access to the App and the **notifications** permission to let you know when it logs a transaction, when your Pockit Pro trial is about to end, or if the SMS shortcut still needs to be set up. It does not request access to location, contacts, camera, microphone, photos, or any other device data. The App has no access to your messages or to Wallet: SMS messages and payment data only reach Pockit if your Shortcuts automation sends them to it.
 
 ## 9. Retention and deletion
 
@@ -92,7 +101,7 @@ Your data remains on your device until you delete it. You can:
 - Use **"Delete account"** in Settings, which permanently erases all transactions, budgets, and goals stored on the device.
 - Uninstall the App, which removes its local database.
 
-The server does not store your transactions. It keeps only the technical data in section 7.3: the random identifier with its monthly count (deleted automatically after 70 days), the App Attest public key and, if you are Pro, Apple's transaction number. You can request their deletion at the contact email.
+The server does not store your transactions. It keeps only the technical data in section 7.3: the random identifier with its monthly count (deleted automatically after 70 days), the App Attest public key and, if you are Pro, Apple's transaction number; and, unless you turned them off, the usage statistics in section 7.4 (up to 13 months). You can request their deletion at the contact email.
 
 ## 10. Your rights (habeas data)
 
